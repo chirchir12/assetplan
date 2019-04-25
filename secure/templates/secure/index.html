@@ -1,0 +1,158 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} ASSETPLAN SECURITY {% endblock %}
+
+{% block style %}
+<style>
+	#services{
+		background: url({% static 'secure/img/background7.jpeg' %}) no-repeat center center fixed;
+		opacity: 0.9;
+		max-height: 100%;
+		height: auto;
+		-webkit-background-size: cover;
+    	-moz-background-size: cover;
+    	-o-background-size: cover;
+    	background-size: cover;
+		margin-top: 50px;
+
+
+		
+	}
+</style>
+
+{% endblock %}
+
+{% block content %}
+	<section id="slider">
+				{% include 'secure/snippets/slider.html' %}
+		
+	</section>
+	<section id="about">
+		<div class="container">
+			<div class="row mt-4" >
+				<div class="col title text-center mb-3">
+					<h3 style="color:#112a51;"> WHY US </h3>
+					<div class="underline"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-md 6 brief">
+					<p class="">AssetPlan Security LTD., a subsidiary of Contemporary Services Corporation, is a recognized leader in enhancing existing security and crowd management operations through the utilization of specially trained law enforcement professionals. The unique understanding and appreciation for this type of service comes from the institutional value of the Assetplan leadership team, who have combined their law enforcement credentials and experience in order to provide an unparalleled level of performance and expertise.
+						<a href="" class="btn btn-sm btn-primary aboutbtn" style="color:#fff;">Learn More...</a>
+						
+					</p>
+					
+				</div>
+				<div class="col-12 col-md 6 ">
+					<img src="{% static 'secure/img/dog.jpg' %}" alt="" class="img-fluid w-100" style="height:290px;">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="services" class="">
+		<div class="container">
+			<div class="row mt-5 " >
+				<div class="col title text-center mb-3">
+					<h3 class="servicetitle pt-3"  style="color:#f2f4f7;"> OUR SERVICES </h3>
+					<div class="underlineservice "></div>
+				</div>
+			</div>
+			<div class="row my-2  ">
+				<div class="col-12 col-md-3 mt-2">
+					<div class="card" style="width: 100%;">
+					  <img class="card-img-top pt-2 imagesize mx-auto img-fluid rounded-circle" src="{% static 'secure/img/property.jpeg' %}" alt="Card image cap">
+					  <div class="card-body">
+					    <h5 class="card-title text-center" style="color:#112a51">Property Protection</h5>
+					    <p class="card-text">AssetPlan Security LTD., a subsidiary of Contemporary Services Corporation, 
+					    <a href="" class="btn btn-sm btn-primary aboutbtn" style="color:#fff;">Learn More...</a></p>
+					    
+					  </div>
+					</div>
+				</div>
+				<div class="col-12 col-md-3 mt-2">
+					<div class="card" style="width: 100%;">
+					  <img class="card-img-top pt-2 imagesize mx-auto img-fluid rounded-circle" src="{% static 'secure/img/personal.jpeg' %}" alt="Card image cap">
+					  <div class="card-body">
+					    <h5 class="card-title text-center" style="color:#112a51">Personal Guard</h5>
+					    <p class="card-text">AssetPlan Security LTD., a subsidiary of Contemporary Services Corporation, 
+					    <a href="" class="btn btn-sm btn-primary aboutbtn ml-uto" style="color:#fff;">Learn More...</a></p>
+					    
+					  </div>
+					</div>
+				</div>
+				<div class="col-12 col-md-3 mt-2">
+					<div class="card" style="width: 100%;">
+					  <img class="card-img-top pt-2 imagesize mx-auto img-fluid rounded-circle" src="{% static 'secure/img/event.jpeg' %}" alt="Card image cap">
+					  <div class="card-body">
+					    <h5 class="card-title text-center" style="color:#112a51">Event Security</h5>
+					    <p class="card-text ">AssetPlan Security LTD., a subsidiary of Contemporary Services Corporation, 
+					    <a href="" class="btn btn-sm btn-primary aboutbtn" style="color:#fff;">Learn More...</a></p>
+					    
+					  </div>
+					</div>
+				</div>
+					<div class="col-12 col-md-3 mt-2">
+					<div class="card" style="width: 100%;">
+					  <img class="card-img-top pt-2 imagesize mx-auto img-fluid rounded-circle" src="{% static 'secure/img/camera.jpeg' %}" alt="Card image cap">
+					  <div class="card-body">
+					    <h5 class="card-title text-center" style="color:#112a51">Alarm,CCTV Install..</h5>
+					    <p class="card-text">AssetPlan Security LTD., a subsidiary of Contemporary Services Corporation, 
+					    <a href="" class="btn btn-sm btn-primary aboutbtn" style="color:#fff;">Learn More...</a></p>
+					    
+					  </div>
+					</div>
+				</div>
+				</div>
+				
+				<div class="row mr-1 ml-1 justify-content-between">
+					<div class="col-12 col-md-3 mt-2 pb-3">
+					<div class="card" style="width: 100%;">
+					  <img class="card-img-top pt-2 imagesize mx-auto img-fluid rounded-circle" src="{% static 'secure/img/audit.jpeg' %}" alt="Card image cap">
+					  <div class="card-body">
+					    <h5 class="card-title text-center" style="color:#112a51">Security Audit</h5>
+					    <p class="card-text">AssetPlan Security LTD., a subsidiary of Contemporary Services Corporation, 
+					    <a href="" class="btn btn-sm btn-primary aboutbtn" style="color:#fff;">Learn More...</a></p>
+					    
+					  </div>
+					</div>
+				</div>
+				<div class="col-12 col-md-3 mt-2 pb-3">
+					<div class="card" style="width: 100%;">
+					  <img class="card-img-top pt-2 imagesize mx-auto img-fluid rounded-circle" src="{% static 'secure/img/private_investigation.png' %}" alt="Card image cap">
+					  <div class="card-body">
+					    <h5 class="card-title text-center" style="color:#112a51">Private investigation</h5>
+					    <p class="card-text">AssetPlan Security LTD., a subsidiary of Contemporary Services Corporation, 
+					    <a href="" class="btn btn-sm btn-primary aboutbtn" style="color:#fff;">Learn More...</a></p>
+					    
+					  </div>
+					</div>
+				</div>
+				<div class="col-12 col-md-3 mt-2 pb-3">
+					<div class="card" style="width: 100%;">
+					  <img class="card-img-top pt-2 imagesize mx-auto img-fluid rounded-circle" src="{% static 'secure/img/dog_handling.jpeg' %}" alt="Card image cap">
+					  <div class="card-body">
+					    <h5 class="card-title text-center" style="color:#112a51">Dog Handling</h5>
+					    <p class="card-text">AssetPlan Security LTD., a subsidiary of Contemporary Services Corporation, 
+					    <a href="" class="btn btn-sm btn-primary aboutbtn" style="color:#fff;">Learn More...</a></p>
+					    
+					  </div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+	</section>
+
+	<section id="contactus">
+		<div class="container">
+			<hr>
+			<div class="row my-5 py-5">
+				<div class="col-12 col-md-10 mx-auto">
+					<p class="getintouch">To learn more about our security services and how our services can help you, kindly <a href="">Get in touch </a> with us today</p>
+				</div>
+			</div>
+		</div>
+	</section
+{% endblock %}

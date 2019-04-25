@@ -1,0 +1,57 @@
+.page-footer{
+	background-color:rgb(17, 42, 81, .9);
+}
+.footertitle{
+	padding:2px 0px;
+	color: #f2f4f7 !important;
+	font-weight: bold;
+	
+}
+.footerbody{
+	color: #f2f4f7;
+	font-family: 'Rokkitt', serif;
+	font-size: 16px;
+	line-height: 1.2rem;
+	letter-spacing: 1px;
+	font-weight: 100;
+}
+.footerhover:hover{
+	text-decoration: none;
+	color:#e51400 !important;
+
+}
+.hr{
+	border: 1px dotted #f2f4f7;
+}
+.fb-btn{
+	background-color: #fff;
+	color:#3B5998;
+	border-radius: 50px;
+	padding:10px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.twitter-btn{
+	background-color: #fff;
+	color:#2ca8d2;
+	border-radius: 50px;
+	padding:10px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.google-btn{
+	background-color: #fff;
+	color:#dd4b39;
+	border-radius: 50px;
+	padding:10px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.linked-btn{
+	background-color: #fff;
+	color:#4875B4;
+	border-radius: 50px;
+	padding:8px;
+	font-size: 18px;
+	font-weight: bold;
+}
