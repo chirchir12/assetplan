@@ -1,0 +1,153 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+@import url('https://fonts.googleapis.com/css?family=Rajdhani');
+body{
+	font-family: 'Rajdhani', sans-serif;
+}
+
+/* nav bar styles */
+.navbar{
+	background-color: rgb(17, 42, 81, .9);
+
+
+}
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+.navbar-brand{
+	color: #f2f4f7 !important;
+	font-family: 'Orbitron', sans-serif !important;
+}
+
+.navbar .nav-item .nav-link{
+	color: #f2f4f7 !important;
+	font-weight: 200;
+	text-transform: uppercase;
+	font-size: 15px;
+
+}
+.navbar .nav-item .nav-link:hover{
+	color:#e51400 !important;
+	font-weight: 500;
+
+}
+
+.dropdown-item {
+	color:#f2f4f7;
+}
+
+
+.dropdown:hover .dropdown-menu{
+	background-color: #112a51;
+	display: block;
+
+}
+.dropdown-item:hover{
+	color:#e51400 !important;
+}
+
+/* carousel style */
+
+.carousel-inner img{
+	
+	height: 70vh;
+
+}
+.slidertitle{
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-family: 'Orbitron', sans-serif;
+}
+.sliderbody{
+	color: #cc0000;
+	font-family: 'Rokkitt', serif;
+	font-size: 18px;
+	line-height: 1.3rem;
+	letter-spacing: 2px;
+}
+.carousel-caption{
+	background-color: rgb(22, 21, 21, .4);
+	width: 400px;
+	margin-left: 300px;
+	margin-bottom: 40px;
+	border-radius: 30px;
+}
+/* about section */
+.underline{
+	border: 1px solid #112a51;
+    width: 100px;
+    text-align: center;
+    margin: auto;
+}
+.underlineservice{
+	border: 1px solid #f2f4f7;
+    width: 180px;
+    text-align: center;
+    margin: auto;
+}
+@import url('https://fonts.googleapis.com/css?family=Orbitron:900');
+
+.servicetitle{
+	font-weight: bold;
+	font-family: 'Orbitron', sans-serif;
+
+}
+.btn-primary{
+	background-color:#112a51 !important;
+}
+@import url('https://fonts.googleapis.com/css?family=Rokkitt');
+.brief p{
+	font-family: 'Rokkitt', serif;
+	font-size: 18px;
+	line-height: 2rem;
+	letter-spacing: 1px;
+}
+
+/* service section */
+
+.imagesize {
+	height: 80px;
+	width: 110px;
+}
+@import url('https://fonts.googleapis.com/css?family=Arapey');
+.card{
+	border-top: 0px;
+	border-left: 0px;
+	padding: 0;
+	border-right: 1px solid #112a51;
+	border-bottom: 1px solid #112a51;
+	border-left: 1px solid #112a51;
+	border-top: 1px solid #112a51;
+	background-color: rgb(17, 42, 81, .6);
+	
+}
+.card-text {
+	color: #f2f4f7;
+	font-family: 'Rokkitt', serif;
+	font-size: 15px;
+	line-height: 1.3rem;
+	letter-spacing: 1px;
+}
+.card-title{
+	padding:2px 0px;
+	color: #f2f4f7 !important;
+	font-weight: bold;
+	border-bottom: 1px solid #f2f4f7;
+
+}
+.aboutbtn:hover{
+	color:#e51400 !important;
+	background-color: #f2f4f7 !important;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+
+.getintouch{
+	color: #112a51;
+	font-family: 'Rokkitt', serif;
+	font-size: 18px;
+	line-height: 1.3rem;
+	letter-spacing: 1px;
+}
+
