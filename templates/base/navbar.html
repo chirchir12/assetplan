@@ -6,6 +6,16 @@
 {% url 'security:contact' as contact_url %}
 {% url 'security:career' as career_url %}
 {% url 'security:location' as location_url %}
+{% url 'services:property-protection' as property_protection_url %}
+{% url 'services:personal-guard' as personal_guard_url %}
+{% url 'services:event-security' as event_security_url %}
+{% url 'services:alarm-and-cctv-installation' as alarm_and_cctv_url %}
+{% url 'services:security-audit' as security_audit_url %}
+{% url 'services:private-investigation' as private_investigation_url %}
+{% url 'services:dog-handling' as dog_handling_url %}
+
+
+
 
 
 <nav class="navbar navbar-expand-lg navbar-light fixed-top">
@@ -27,13 +37,13 @@
             Services Offered
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Property Protection</a>
-            <a class="dropdown-item" href="#">Personal Guard Protection</a>
-            <a class="dropdown-item" href="#">Event Security</a>
-            <a class="dropdown-item" href="#">Alarms and CCTV Installations</a>
-            <a class="dropdown-item" href="#">Security Audit</a>
-            <a class="dropdown-item" href="#">Private Investigations</a>
-            <a class="dropdown-item" href="#">Dog Handling and Patrols</a>
+            <a class="dropdown-item" href="{{property_protection_url}}">Property Protection</a>
+            <a class="dropdown-item" href="{{personal_guard_url}}">Personal Guard Protection</a>
+            <a class="dropdown-item" href="{{event_security_url}}">Event Security</a>
+            <a class="dropdown-item" href="{{alarm_and_cctv_url}}">Alarms and CCTV Installations</a>
+            <a class="dropdown-item" href="{{security_audit_url}}">Security Audit</a>
+            <a class="dropdown-item" href="{{private_investigation_url}}">Private Investigations</a>
+            <a class="dropdown-item" href="{{dog_handling_url}}">Dog Handling and Patrols</a>
           </div>
         </li>
         
