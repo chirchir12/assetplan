@@ -1,27 +1,80 @@
 from django.shortcuts import render
 
+from .forms import QuoteForm
+
 def property_protection_view(request):
-	return render(request, 'services/propert_protection.html', {})
+	form = QuoteForm(request.POST)
+	if form.is_valid():
+		form.save()
+		form=QuoteForm()
+
+	context = {
+		'form':form
+	}
+	return render(request, 'services/propert_protection.html', context)
 
 
 
 def personal_guard_protection_view(request):
-	return render(request, 'services/personal_guard.html', {})
+	form = QuoteForm(request.POST)
+	if form.is_valid():
+		form.save()
+		form=QuoteForm()
+
+	context = {
+		'form':form}
+
+	return render(request, 'services/personal_guard.html', context)
 
 def event_security(request):
-	return render(request, 'services/event_security.html', {})
+	form = QuoteForm(request.POST)
+	if form.is_valid():
+		form.save()
+		form=QuoteForm()
+
+	context = {
+		'form':form}
+	return render(request, 'services/event_security.html', context)
 
 
 def alarm_and_cctv_installation(request):
-	return render(request, 'services/alarm_and_cctv_installation.html', {})
+	form = QuoteForm(request.POST)
+	if form.is_valid():
+		form.save()
+		form=QuoteForm()
+
+	context = {
+		'form':form}
+	return render(request, 'services/alarm_and_cctv_installation.html', context)
 
 
 def security_audit(request):
-	return render(request, 'services/security_audit.html', {})
+	form = QuoteForm(request.POST)
+	if form.is_valid():
+		form.save()
+		form=QuoteForm()
+
+	context = {
+		'form':form}
+	return render(request, 'services/security_audit.html', context)
 
 def private_investigation(request):
-	return render(request, 'services/private_investigation.html', {})
+	form = QuoteForm(request.POST)
+	if form.is_valid():
+		form.save()
+		form=QuoteForm()
+
+	context = {
+		'form':form}
+	return render(request, 'services/private_investigation.html', context)
 
 def dog_handling(request):
-	return render(request, 'services/dog_handling.html', {})
+	form = QuoteForm(request.POST)
+	if form.is_valid():
+		form.save()
+		form=QuoteForm()
+
+	context = {
+		'form':form}
+	return render(request, 'services/dog_handling.html', context)
 
