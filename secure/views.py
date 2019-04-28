@@ -16,7 +16,16 @@ def index_view(request):
 
 
 def about_view(request):
-	return render(request, 'secure/about.html', {})
+	form = ContactForm(request.POST)
+	
+	if form.is_valid():
+		form.save()
+		form = ContactForm()
+
+	context = {
+		'form':form
+		}
+	return render(request, 'secure/about.html', context)
 
 def contact_view(request):
 	return render(request, 'secure/contact.html', {})
