@@ -13,6 +13,7 @@ body{
 
 
 }
+
 @import url('https://fonts.googleapis.com/css?family=Orbitron');
 .navbar-brand{
 	color: #f2f4f7 !important;
@@ -50,8 +51,11 @@ body{
 
 .carousel-inner img{
 	
-	height: 70vh;
+	height: 50vh;
 
+}
+.active{
+	color:#e51400 !important;
 }
 .slidertitle{
 	font-weight: bold;
@@ -59,18 +63,20 @@ body{
 	font-family: 'Orbitron', sans-serif;
 }
 .sliderbody{
-	color: #cc0000;
+	color: #e51400;
 	font-family: 'Rokkitt', serif;
 	font-size: 18px;
 	line-height: 1.3rem;
 	letter-spacing: 2px;
+	font-weight: bolder;
 }
 .carousel-caption{
-	background-color: rgb(22, 21, 21, .4);
-	width: 400px;
-	margin-left: 300px;
+	background-color: rgb(22, 21, 21, .2);
+	width: 380px;
+	margin-left: 270px;
 	margin-bottom: 40px;
-	border-radius: 30px;
+	border-radius: 70px;
+	border-bottom: 1px solid rgb(51, 52, 53,.9);
 }
 /* about section */
 .underline{
@@ -150,4 +156,23 @@ body{
 	line-height: 1.3rem;
 	letter-spacing: 1px;
 }
+.textp{
+	margin-left: 500px;
+}
+.page-footer{
+	height: 65vh;
+}
 
+.map-container-6{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container-6 iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}

@@ -1,15 +1,25 @@
+{% load static %}
+
+
+{% url 'security:index' as index_url %}
+{% url 'security:about' as about_url %}
+{% url 'security:contact' as contact_url %}
+{% url 'security:career' as career_url %}
+{% url 'security:location' as location_url %}
+
+
 <nav class="navbar navbar-expand-lg navbar-light fixed-top">
   <div class="container">
-      <a class="navbar-brand" href="#">ASSETPLAN SECURITY LTD.</a>
+      <a class="navbar-brand" href="{{index_url}}">AssetPlan Security</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
       </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home</span></a>
+        <li class="nav-item {% if request.path == index_url %} active {% endif %}">
+          <a class="nav-link" href="{{ index_url }}">Home</span></a>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item  dropdown">
           <div class="open">
             
           </div>
@@ -26,17 +36,15 @@
             <a class="dropdown-item" href="#">Dog Handling and Patrols</a>
           </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Location</a>
+        <li class="nav-item {% if request.path == location_url %} active {% endif %}">
+          <a class="nav-link" href="{{location_url}}">Location</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About Us</a>
+        <li class="nav-item {% if request.path == about_url %} active {% endif %}">
+          <a class="nav-link" href="{{about_url}}">About Us</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Career</a>
+        
+        <li class="nav-item {% if request.path == career_url %} active {% endif %}">
+          <a class="nav-link" href="{{career_url}}">Career</a>
         </li>
         
       </ul>
@@ -44,3 +52,6 @@
   </div>
   
 </nav>
+<div style="height:55px;">
+  
+</div>
