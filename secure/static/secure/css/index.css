@@ -13,6 +13,7 @@ body{
 
 
 }
+
 @import url('https://fonts.googleapis.com/css?family=Orbitron');
 .navbar-brand{
 	color: #f2f4f7 !important;
@@ -50,8 +51,11 @@ body{
 
 .carousel-inner img{
 	
-	height: 70vh;
+	height: 50vh;
 
+}
+.active{
+	color:#e51400 !important;
 }
 .slidertitle{
 	font-weight: bold;
@@ -152,4 +156,23 @@ body{
 	line-height: 1.3rem;
 	letter-spacing: 1px;
 }
+.textp{
+	margin-left: 500px;
+}
+.page-footer{
+	height: 65vh;
+}
 
+.map-container-6{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container-6 iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}

@@ -1,7 +1,9 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load crispy_forms_tags %}
 
-{% block title %} ASSETPLAN SECURITY {% endblock %}
+
+{% block title %} Security {% endblock %}
 
 {% block style %}
 <style>
@@ -14,11 +16,19 @@
     	-moz-background-size: cover;
     	-o-background-size: cover;
     	background-size: cover;
-		margin-top: 50px;
+		margin-top: 50px;}
+
+	.fixed-image{
+		background-image: linear-gradient(to bottom, rgb(237, 239, 239, .1), rgb(237, 239, 239, .7)), url({% static 'secure/img/computers.png' %});
+		background-size: cover;
+		background-attachment: fixed;
+
+		min-height: 100%;
+		
+	}
 
 
 		
-	}
 </style>
 
 {% endblock %}
@@ -39,7 +49,7 @@
 			<div class="row">
 				<div class="col-12 col-md 6 brief">
 					<p class="">AssetPlan Security LTD., a subsidiary of Contemporary Services Corporation, is a recognized leader in enhancing existing security and crowd management operations through the utilization of specially trained law enforcement professionals. The unique understanding and appreciation for this type of service comes from the institutional value of the Assetplan leadership team, who have combined their law enforcement credentials and experience in order to provide an unparalleled level of performance and expertise.
-						<a href="" class="btn btn-sm btn-primary aboutbtn" style="color:#fff;">Learn More...</a>
+						<a href="{% url 'security:about' %}" class="btn btn-sm btn-primary aboutbtn" style="color:#fff;">Learn More...</a>
 						
 					</p>
 					
@@ -147,12 +157,37 @@
 
 	<section id="contactus">
 		<div class="container">
-			<hr>
-			<div class="row my-5 py-5">
-				<div class="col-12 col-md-10 mx-auto">
-					<p class="getintouch">To learn more about our security services and how our services can help you, kindly <a href="">Get in touch </a> with us today</p>
+			<div class="row mt-4" >
+				<div class="col title text-center mb-3">
+					<h3 style="color:#112a51;"> Get in Touch </h3>
 				</div>
+			</div>
+			<div class="row">
+				<div class="col brief text-center">
+					<p class=" textp mx-auto" style="color:#112a51;">Do you have any questions? Please do not hesitate to contact us directly. Fill the form below</p>
+				</div>
+			</div>
+			<div class="row mb-3">
+				
+				
+				<div class="col-12 col-md-6">
+					<form action="" method="POST">
+						{% csrf_token %}
+						
+						<div class=" mb-4">{{form.fullname}}</div>
+						<div class="mb-4">{{form.email}}</div>
+						<div class="mb-4">{{form.phone}}</div>
+						<div >{{form.message}}</div>
+						<button type="submit" class="btn btn-lg btn-primary aboutbtn mt-3" style="color:#fff;">send</button>
+					</form>
+				</div>
+				<div class="col-md-6 fixed-image">
+           		 <!--img src="{% static 'secure/img/computers.png' %}" alt="" class="img-fluid"-->
+        </div>
 			</div>
 		</div>
 	</section
 {% endblock %}
+
+
+
