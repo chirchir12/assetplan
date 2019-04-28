@@ -1,32 +1,29 @@
+{% extends 'base.html' %}
 {% load static %}
-<div class="container">
-	<hr>
-			<div class="row mt-4" >
-				<div class="col title text-center mb-3">
-					<h3 class="servicetitle" style="color:#112a51;"> Get in Touch </h3>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col brief text-center">
-					<p class=" textp mx-auto" style="color:#112a51;">Do you have any questions? Please do not hesitate to contact us directly. Fill the form below</p>
-				</div>
-			</div>
-			<div class="row mb-3">
-				
-				
-				<div class="col-12 col-md-6">
-					<form action="" method="POST">
-						{% csrf_token %}
-						
-						<div class=" mb-4">{{form.fullname}}</div>
-						<div class="mb-4">{{form.email}}</div>
-						<div class="mb-4">{{form.phone}}</div>
-						<div >{{form.message}}</div>
-						<button type="submit" class="btn btn-lg btn-primary aboutbtn mt-3" style="color:#fff;">send</button>
-					</form>
-				</div>
-				<div class="col-md-6 fixed-image">
-           		 <!--img src="{% static 'secure/img/computers.png' %}" alt="" class="img-fluid"-->
-        </div>
-			</div>
-		</div>
+{% block title %} Contact {% endblock %}
+
+{% block style  %}
+<style>
+
+	.fixed-image{
+		background-image: linear-gradient(to bottom, rgb(237, 239, 239, .1), rgb(237, 239, 239, .7)), url({% static 'secure/img/computers.png' %});
+		background-size: cover;
+		background-attachment: fixed;
+
+		min-height: 100%;
+		
+	}
+
+
+		
+</style>
+
+{% endblock %}
+
+
+{% block content %}
+<section id="contactpage">
+	{% include 'secure/snippets/contact-form.html' %}
+</section>
+
+{% endblock %}

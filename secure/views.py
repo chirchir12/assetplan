@@ -28,7 +28,16 @@ def about_view(request):
 	return render(request, 'secure/about.html', context)
 
 def contact_view(request):
-	return render(request, 'secure/contact.html', {})
+	form = ContactForm(request.POST)
+	
+	if form.is_valid():
+		form.save()
+		form = ContactForm()
+
+	context = {
+		'form':form
+		}
+	return render(request, 'secure/contact.html', context)
 
 def career_view(request):
 	return render(request, 'secure/career.html', {})

@@ -40,7 +40,9 @@
         <li class="nav-item {% if request.path == about_url %} active {% endif %}">
           <a class="nav-link" href="{{about_url}}">About Us</a>
         </li>
-        
+        <li class="nav-item {% if request.path == contact_url %} active {% endif %}">
+          <a class="nav-link" href="{{contact_url}}">Contact Us</a>
+        </li>
         <li class="nav-item {% if request.path == career_url %} active {% endif %}">
           <a class="nav-link" href="{{career_url}}">Career</a>
         </li>
