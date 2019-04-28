@@ -1,11 +1,58 @@
 {% extends 'base.html' %}
 {% block title %}About {% endblock %}
+
+{% load static %}
+{% block style %}
+<style>
+
+	.fixed-image{
+		background-image: linear-gradient(to bottom, rgb(237, 239, 239, .1), rgb(237, 239, 239, .7)), url({% static 'secure/img/computers.png' %});
+		background-size: cover;
+		background-attachment: fixed;
+
+		min-height: 100%;
+		
+	}
+
+
+		
+</style>
+
+{% endblock %}
+
+
 {% block content %}
+<section id="about">
 <div class="container">
-	<div class="row my-5">
-		<div class="col py-4">
-			<h4>this is about page </h4>
+	<div class="row my-4">
+		<div class="col py-2  brief headertextcolor">
+			<h4 class="text-center subtitle"> World Class Security Company </h4>
+			<p>Assetplan security Ltd. is a world-class security company that aims to provide quality security and risk management solutions. the company was incorporated in the year 2018 after
+		successfully going through the stringent Kenya government processes on registration of security
+		firms. The company is committed to excellent property and personal protection services with the
+		key aim to stand out. Since it was incorporated, the company has recruited and engaged reliable
+		management and operations team that has so for displayed commitments and cohesive
+		execution of their respective tasks.</p>
+		<div class="services-offered">
+		<h4 class="brief subtitle">Assetplan Securuty Services:</h4>
+		<ul class="pl-3 list-items">
+			<li><a href="">Property Protection</a></li>
+			<li><a href="">Personal Protection</a></li>
+			<li><a href="">Event Security</a></li>
+			<li><a href="">Security System Installation (Alarm and CCTV)</a></li>
+			<li><a href="">Security Audit</a></li>
+			<li><a href="">Private Investigations</a></li>
+			<li><a href="">Dog Handling and Patrol</a></li>
+			
+		</ul>
+		</div>
 		</div>
 	</div>
+
 </div>
+</section>
+<section id="contactonabout">
+	{% include 'secure/contact.html' %}
+</section>
+
 {% endblock  %}

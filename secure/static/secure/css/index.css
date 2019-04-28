@@ -19,12 +19,15 @@ body{
 	color: #f2f4f7 !important;
 	font-family: 'Orbitron', sans-serif !important;
 }
+@import url('https://fonts.googleapis.com/css?family=Heebo:800');
 
 .navbar .nav-item .nav-link{
 	color: #f2f4f7 !important;
-	font-weight: 200;
+	font-weight: 700;
 	text-transform: uppercase;
-	font-size: 15px;
+	font-size: 16px;
+	font-family: 'Heebo', sans-serif;
+
 
 }
 .navbar .nav-item .nav-link:hover{
@@ -81,22 +84,24 @@ body{
 /* about section */
 .underline{
 	border: 1px solid #112a51;
-    width: 100px;
+    width: 70px;
     text-align: center;
     margin: auto;
 }
 .underlineservice{
 	border: 1px solid #f2f4f7;
-    width: 180px;
+    width: 120px;
     text-align: center;
     margin: auto;
 }
 @import url('https://fonts.googleapis.com/css?family=Orbitron:900');
 
 .servicetitle{
-	font-weight: bold;
-	font-family: 'Orbitron', sans-serif;
-
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 18px;
+	letter-spacing: 1px;
+	font-family: 'Heebo', sans-serif;
 }
 .btn-primary{
 	background-color:#112a51 !important;
@@ -105,7 +110,7 @@ body{
 .brief p{
 	font-family: 'Rokkitt', serif;
 	font-size: 18px;
-	line-height: 2rem;
+	line-height: 1.6rem;
 	letter-spacing: 1px;
 }
 
@@ -159,9 +164,7 @@ body{
 .textp{
 	margin-left: 500px;
 }
-.page-footer{
-	height: 65vh;
-}
+
 
 .map-container-6{
 overflow:hidden;
