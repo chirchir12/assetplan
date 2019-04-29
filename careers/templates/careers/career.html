@@ -3,5 +3,16 @@
 {% block title %} Career {% endblock %}
 
 {% block content %}
-this is careereeeeeeeeeeeeepage
+<div class="container">
+	<div class="row">
+		<div class="col">
+		<form action="" method="POST" enctype="multipart/form-data">
+			{% csrf_token %}
+			{{form.as_p}}
+			<input type="submit" value="submit">
+		</form>	
+		</div>
+		
+	</div>
+</div>
 {% endblock %}

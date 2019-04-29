@@ -9,9 +9,6 @@ def validate_file_extension(value):
 
 class Career(models.Model):
 	
-
-
-
 	firstname        = models.CharField(max_length=200)
 	lastname         = models.CharField(max_length=250)
 	phone            = models.CharField(max_length=100)
