@@ -1,5 +1,22 @@
 {% extends 'base.html' %}
 {% block title %}Event Security {% endblock %}
+
+
 {% block content %}
-this is event security page
+<div class="container">
+	<div class="row mt-4">
+		<div class="col brief bodytext-p">
+			<h4 class="text-center subtitle">Event Security</h4>
+			<p> To have a smooth workflow of activities in an event, people and operations must be supervised effectively. Having security personnels onsite to help in the supervision is not only a way to reduce security risks but also a strategic method of delegating such tasks to personnel who are well trained and ready to work with you while upholding the highest professional standards.  </p>
+			<p>Assetplan Security Ltd personnels can manage a number of responsibilites which include access control, parking management, usher services, security checks and metal detections. <b>to request a quote, kindly fill out the form below and we will get to you immediately.</b></p>
+		</div>
+	</div>
+	<div class="row my-4">
+		<div class="col-12 col-md-7 mx-auto">
+			<h4 class="text-center subtitle">Fill the Form</h4>
+			<div class="underlineform"></div>
+			{% include 'services/snippets/quote-form.html' with form=form %}
+		</div>
+	</div>
+</div>
 {% endblock %}
