@@ -1,5 +1,22 @@
 {% extends 'base.html' %}
 {% block title %}Private Investigation {% endblock %}
+
+
 {% block content %}
-this is private investigation page page
+<div class="container">
+	<div class="row mt-4">
+		<div class="col brief bodytext-p">
+			<h4 class="text-center subtitle">Private Investigations</h4>
+			<p> There are situations when you need a low profile private investigator to provide advices and find evidence to a particular case. As a Security Firm, we have a wealth of knowledge in this area and we have facilitated our specially-trained officers to address such needs in the most professional way. </p>
+			<p>We have a team that is dynamic, innovative and trained specifically for these tasks. We also carry out inquiries quickly and thoroughly while being cost-effective in terms of client needs. <b>to request a quote, kindly fill out the form below and we will get to you immediately.</b></p>
+		</div>
+	</div>
+	<div class="row my-4">
+		<div class="col-12 col-md-7 mx-auto">
+			<h4 class="text-center subtitle">Fill the Form</h4>
+			<div class="underlineform"></div>
+			{% include 'services/snippets/quote-form.html' with form=form %}
+		</div>
+	</div>
+</div>
 {% endblock %}
