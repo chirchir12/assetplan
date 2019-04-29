@@ -1,5 +1,22 @@
 {% extends 'base.html' %}
-{% block title %}Hadndling {% endblock %}
+{% block title %}Dog Handling and Patrol {% endblock %}
+
+
 {% block content %}
-this is dog handling page page page
+<div class="container">
+	<div class="row mt-4">
+		<div class="col brief bodytext-p">
+			<h4 class="text-center subtitle">Dog Handling and Patrols</h4>
+			<p> Assetplan Security Ltd an provide canine units with their handlers to respond to a particular situation. Our dogs are well trained for protection and detection purposes. We can also work with other canine units from the governement to ensure a stronger and robust security solutiom </p>
+			<p>Our dogs have been trained specifically for searching, intruder detection, and patrolling responsibilities. Our dogs can also detect explosives in buildings, luggages and cars as well as indicating the presence of such explosive materials.  <b>to request a quote, kindly fill out the form below and we will get to you immediately.</b></p>
+		</div>
+	</div>
+	<div class="row my-4">
+		<div class="col-12 col-md-7 mx-auto">
+			<h4 class="text-center subtitle">Fill the Form</h4>
+			<div class="underlineform"></div>
+			{% include 'services/snippets/quote-form.html' with form=form %}
+		</div>
+	</div>
+</div>
 {% endblock %}
