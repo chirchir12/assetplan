@@ -1,5 +1,22 @@
 {% extends 'base.html' %}
+{% block title %}Personal Guard Protection{% endblock %}
+
 
 {% block content %}
-this is property protection page
+<div class="container">
+	<div class="row mt-4">
+		<div class="col brief bodytext-p">
+			<h4 class="text-center subtitle">Personal Guard Protection</h4>
+			<p>Our security Guards have gone through a rigorous vetting process to ensure that they provide quality services to our client. At the time of recruitement, our personnel go through a diligent scrutiny system to ensure that they are displine and reliable for any kind of assignment. </p>
+			<p>With specially trainined and certified VIP Security Professionals, we aimed to offer security solutions both at executive and personal level. We also equip our personnel with the required tools to provide the best security services.   <b>to request a quote, kindly fill out the form below and we will get to you immediately.</b></p>
+		</div>
+	</div>
+	<div class="row my-4">
+		<div class="col-12 col-md-7 mx-auto">
+			<h4 class="text-center subtitle">Fill the Form</h4>
+			<div class="underlineform"></div>
+			{% include 'services/snippets/quote-form.html' with form=form %}
+		</div>
+	</div>
+</div>
 {% endblock %}
