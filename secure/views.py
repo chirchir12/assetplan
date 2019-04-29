@@ -39,8 +39,5 @@ def contact_view(request):
 		}
 	return render(request, 'secure/contact.html', context)
 
-def career_view(request):
-	return render(request, 'secure/career.html', {})
-
 def location_view(request):
 	return render(request, 'secure/location.html', {})
