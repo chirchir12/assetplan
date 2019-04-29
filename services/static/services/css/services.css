@@ -1,0 +1,35 @@
+.subtitle{
+	color:#112a51 !important;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 18px;
+	letter-spacing: 1px;
+	font-family: 'Heebo', sans-serif;
+
+}
+
+.bodytext-p p{
+	color:#112a51 !important;
+
+}
+
+.underlineform{
+	border: 1px solid #112a51;
+    width: 120px;
+    text-align: center;
+    margin: auto;
+}
+.form-control{
+	border: none;
+	border-bottom: 1px solid #112a51;
+	box-shadow: none;
+	outline: none;
+	border-radius:0;
+	background: transparent;
+	padding:10px;
+	margin-right:5px;
+}
+.label-color label{
+	font-weight: bold;
+}
+
