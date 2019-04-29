@@ -1,6 +1,22 @@
 {% extends 'base.html' %}
 {% block title %}Security Audit {% endblock %}
 
+
 {% block content %}
-this is security audit page page
+<div class="container">
+	<div class="row mt-4">
+		<div class="col brief bodytext-p">
+			<h4 class="text-center subtitle">Security Audit</h4>
+			<p> The main purpose of carrying out security audits is to identify the cause of a given problem and how such problem can be fixed with immediate effect. Assetplan Security Ltd works closely with government agencies to ensure that such services are carried out successfully.</p>
+			<p>As a company, we have trained our personnel for this specific purpose. Our teams are able to map the results of a security audit which of course includes an investigation of adherence to policy and procedures onto various regulatory and industry best practices standards.<b>to request a quote, kindly fill out the form below and we will get to you immediately.</b></p>
+		</div>
+	</div>
+	<div class="row my-4">
+		<div class="col-12 col-md-7 mx-auto">
+			<h4 class="text-center subtitle">Fill the Form</h4>
+			<div class="underlineform"></div>
+			{% include 'services/snippets/quote-form.html' with form=form %}
+		</div>
+	</div>
+</div>
 {% endblock %}
