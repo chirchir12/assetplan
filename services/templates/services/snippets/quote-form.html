@@ -1,37 +1,21 @@
 
 <form action="" method="POST" class="mt-3">
 	{% csrf_token %}
-	<div class="form-row label-color">
-		<div class="col label-color">
-			<label for="firstName" style="color:#112a51;">Firstname</label><br>
+		<div class=" label-color">
+			<label for="firstName" style="color:#112a51;">Fullname</label><br>
 			{{form.fname}}
 			{% if form.help_text %}
 			<small class="form-text text-muted">{{form.help_text}}</small>
 			{% endif %}
 		</div>
-		<div class="col label-color">
-			<label for="lastname" style="color:#112a51;">Lastname</label><br>
-			{{form.lname}}
-		</div>
-	</div>
-	<div class="form-row">
-		<div class="col label-color">
+		<div class="label-color">
 			<label for="phone" style="color:#112a51;">Phone Number</label><br>
 			{{form.phone}}
 		</div>
-		<div class="col label-color">
+		<div class="label-color">
 			<label for="email" style="color:#112a51;">Email</label><br>
 			{{form.email}}
 		</div>
-	</div>
-	<div class="label-color">
-		<label for="location" style="color:#112a51;">Location</label><br>
-		{{form.location}}
-	</div>
-	<div class="label-color">
-		<label for="subject" style="color:#112a51;">Subject</label><br>
-		{{form.subject}}
-	</div>
 	<div class="label-color">
 		<label for="message" style="color:#112a51;">Message</label><br>
 		{{form.message}}
