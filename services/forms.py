@@ -6,7 +6,7 @@ class QuoteForm(forms.ModelForm):
 	fname    = forms.CharField(max_length=250, help_text='enter your firstname', widget=forms.TextInput(
 		attrs={
 			'class':'form-control form-control-sm mb-2',
-			'placeholder':'enter your firstname'
+			'placeholder':'enter your name'
 
 		}))
 	phone    = forms.CharField(max_length=100, widget=forms.TextInput(
@@ -26,7 +26,7 @@ class QuoteForm(forms.ModelForm):
 		attrs={
 			'class':'form-control form-control-sm mb-2',
 			'rows':2,
-			'placeholder':'Give as a brief explanation'
+			'placeholder':'type your message here'
 		
 		}))
 
