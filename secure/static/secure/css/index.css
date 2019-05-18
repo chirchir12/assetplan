@@ -54,7 +54,7 @@ body{
 
 .carousel-inner img{
 	
-	height: 70vh;
+	height: 46vh;
 
 }
 .active{
@@ -122,13 +122,12 @@ body{
 @import url('https://fonts.googleapis.com/css?family=Arapey');
 .card{
 	border-top: 0px;
-	border-left: 0px;
+	
 	padding: 0;
-	border-right: 1px solid #112a51;
+	border: 0;
 	border-bottom: 1px solid #112a51;
-	border-left: 1px solid #112a51;
-	border-top: 1px solid #112a51;
-	background-color: rgb(17, 42, 81, .6);
+	
+	background-color: rgb(17, 42, 81, .1);
 	
 }
 .card-text {
