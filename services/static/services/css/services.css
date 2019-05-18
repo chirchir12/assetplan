@@ -28,8 +28,12 @@
 	background: transparent;
 	padding:10px;
 	margin-right:5px;
+	font-size: 18px;
 }
 .label-color label{
 	font-weight: bold;
 }
+
+.form-control:focus{border-color: #5cb85c !important;  box-shadow: none; -webkit-box-shadow: none;} 
+.has-error .form-control:focus{box-shadow: none; -webkit-box-shadow: none;}
 
