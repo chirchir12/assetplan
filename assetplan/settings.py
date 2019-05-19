@@ -81,10 +81,10 @@ WSGI_APPLICATION = 'assetplan.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'assetplan',
-        'USER':'assetsecurity',
-        'PASSWORD': 'Admin123',
+        'USER':'root',
+        'PASSWORD': 'Chirchir1.',
         'HOST':'localhost',
         'PORT': ''
 
@@ -116,7 +116,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Africa/Nairobi'
 
 USE_I18N = True
 
