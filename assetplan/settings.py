@@ -84,6 +84,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'OPTIONS': {
         'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+        'managed':True,
     },
         'NAME': 'gideon$assetplan',
         'USER':'gideon',
