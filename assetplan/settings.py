@@ -82,10 +82,10 @@ WSGI_APPLICATION = 'assetplan.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'assetplan',
-        'USER':'root',
+        'NAME': 'gideon$assetplan',
+        'USER':'gideon',
         'PASSWORD': 'Chirchir1.',
-        'HOST':'localhost',
+        'HOST':'gideon.mysql.pythonanywhere-services.com',
         'PORT': ''
 
     }
