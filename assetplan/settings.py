@@ -25,7 +25,7 @@ SECRET_KEY = '^t@2&3nye6tn81!+u-ivq*no8&gb7r@!9#ua=83plfh5_%wagm'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['www.assetplan.co.ke', '127.0.0.1']
+ALLOWED_HOSTS = ['www.assetplan.co.ke', '127.0.0.1', 'assetplan.co.ke', 'https://www.assetplan.co.ke/']
 
 
 # Application definition
