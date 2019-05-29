@@ -5,6 +5,8 @@ import os
 #overide soometings here
 SECRET_KEY = os.getenv("SECRET_KEY"),
 
+ALLOWED_HOSTS = ['http://assetplan.co.ke','www.assetplan.co.ke', 'assetplan.co.ke', 'https://www.assetplan.co.ke/']
+
 
 DATABASES = {
     'default': {

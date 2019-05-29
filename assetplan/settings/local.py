@@ -11,12 +11,12 @@ PROJECT_PATH = os.path.realpath(os.path.dirname(__file__))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '^t@2&3nye6tn81!+u-ivq*no8&gb7r@!9#ua=83plfh5_%wagm'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['http://assetplan.co.ke','www.assetplan.co.ke', '127.0.0.1', 'assetplan.co.ke', 'https://www.assetplan.co.ke/']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -71,19 +71,6 @@ WSGI_APPLICATION = 'assetplan.wsgi.application'
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'OPTIONS': {
-        'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
-
-    },
-        'NAME': 'gideon$assetplan',
-        'USER':'gideon',
-        'PASSWORD':'Chirchir1',
-        'HOST':'gideon.mysql.pythonanywhere-services.com',
-        'PORT': ''
-
-    }
     
 }
 
