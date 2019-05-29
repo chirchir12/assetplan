@@ -3,6 +3,7 @@ import os
 
 
 #overide soometings here
+SECRET_KEY = os.getenv("SECRET_KEY"),
 
 
 DATABASES = {
