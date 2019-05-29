@@ -1,4 +1,5 @@
 from .local import *
+import os
 
 
 #overide soometings here
@@ -11,10 +12,10 @@ DATABASES = {
         'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
 
     },
-        'NAME': 'gideon$assetplan',
-        'USER':'gideon',
-        'PASSWORD':'Chirchir1',
-        'HOST':'gideon.mysql.pythonanywhere-services.com',
+        'NAME':  os.getenv("DATABASE_NAME"),
+        'USER':os.getenv("DATABASE_USER"),
+        'PASSWORD':os.getenv("DATABASE_PASSWORD"),
+        'HOST':os.getenv("DATABASE_HOST"),
         'PORT': ''
 
     }
