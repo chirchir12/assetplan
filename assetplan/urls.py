@@ -9,6 +9,8 @@ urlpatterns = [
 	path('services/', include('services.urls')),
 	path('careers/', include('careers.urls')),
     path('admin/', admin.site.urls),
+    path('', include('webmaster_verification.urls'))
+
 ]
 
 

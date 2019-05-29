@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'services',
     'careers',
     'crispy_forms',
+    'webmaster_verification'
 ]
 
 MIDDLEWARE = [
@@ -46,6 +47,12 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'assetplan.urls'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+WEBMASTER_VERIFICATION = {
+    
+    'google': 'googlede6f79e30327ce4c',
+    
+}
 
 TEMPLATES = [
     {
