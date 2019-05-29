@@ -1,4 +1,4 @@
-from settings.base import *
+from .local import *
 
 
 #overide soometings here
