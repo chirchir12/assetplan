@@ -3,7 +3,7 @@ import os
 
 
 #overide soometings here
-SECRET_KEY ="^t@2&3nye6tn81!+u-ivq*no8&gb7r@!9#ua=83plfh5_%wagm"
+SECRET_KEY ='^t@2&3nye6tn81!+u-ivq*no8&gb7r@!9#ua=83plfh5_%wagm'
 
 ALLOWED_HOSTS = ['http://assetplan.co.ke','www.assetplan.co.ke', 'assetplan.co.ke', 'https://www.assetplan.co.ke/']
 
