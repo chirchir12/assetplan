@@ -1,7 +1,7 @@
 from .local import *
 import os
 
-
+DEBUG=False
 #overide soometings here
 SECRET_KEY =os.getenv("SECRET_KEY")
 
@@ -24,3 +24,16 @@ DATABASES = {
     }
     
 }
+
+STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+    
+]
+
+STATIC_ROOT = '/home/gideon/static_cdn/static-root'
+
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = '/home/gideon/static_cdn/media-root'
