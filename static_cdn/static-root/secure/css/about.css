@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron:900');
+@import url('https://fonts.googleapis.com/css?family=Heebo:800');
+
+
+.headertextcolor h4{
+	color:#112a51 !important;
+}
+
+.bodytext-p{
+	color:#112a51 !important;
+
+}
+
+.subtitle{
+	color:#112a51 !important;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 18px;
+	letter-spacing: 1px;
+	font-family: 'Heebo', sans-serif;
+	
+}
+
+.list-items li {
+	margin-left: 10px;
+	list-style-type: square;
+	padding-bottom: 11px;
+	padding-top: 2px;
+}
+.list-items a{
+	color:#112a51 !important;
+	text-decoration: none;
+}
+.list-items a:hover{
+	color:#e51400 !important;
+}
