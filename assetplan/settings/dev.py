@@ -2,7 +2,7 @@ from .local import *
 
 ALLOWED_HOSTS = ['127.0.0.1']
 
-SECRET_KEY = '^t@2&3nye6tn81!+u-ivq*no8&gb7r@!9#ua=83plfh5_%wagm'
+SECRET_KEY = os.environ['SECRET_KEY']
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
