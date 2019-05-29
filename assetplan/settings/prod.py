@@ -3,7 +3,7 @@ import os
 
 
 #overide soometings here
-SECRET_KEY = os.getenv("SECRET_KEY"),
+SECRET_KEY ="^t@2&3nye6tn81!+u-ivq*no8&gb7r@!9#ua=83plfh5_%wagm"
 
 ALLOWED_HOSTS = ['http://assetplan.co.ke','www.assetplan.co.ke', 'assetplan.co.ke', 'https://www.assetplan.co.ke/']
 
@@ -15,10 +15,10 @@ DATABASES = {
         'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
 
     },
-        'NAME':  os.getenv("DATABASE_NAME"),
-        'USER':os.getenv("DATABASE_USER"),
-        'PASSWORD':os.getenv("DATABASE_PASSWORD"),
-        'HOST':os.getenv("DATABASE_HOST"),
+        'NAME':'gideon$assetplan',
+        'USER':'gideon',
+        'PASSWORD':'gID@123.!',
+        'HOST':'gideon.mysql.pythonanywhere-services.com',
         'PORT': ''
 
     }
