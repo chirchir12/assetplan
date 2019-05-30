@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.contrib import messages
 
 from .forms import QuoteForm
 
@@ -6,6 +7,7 @@ def property_protection_view(request):
 	form = QuoteForm(request.POST)
 	if form.is_valid():
 		form.save()
+		messages.success(request, 'Your request has been sent successfully.!!')
 		form=QuoteForm()
 
 	context = {
@@ -19,6 +21,7 @@ def personal_guard_protection_view(request):
 	form = QuoteForm(request.POST)
 	if form.is_valid():
 		form.save()
+		messages.success(request, 'Your request has been sent successfully.!!')
 		form=QuoteForm()
 
 	context = {
@@ -30,6 +33,7 @@ def event_security(request):
 	form = QuoteForm(request.POST)
 	if form.is_valid():
 		form.save()
+		messages.success(request, 'Your request has been sent successfully.!!')
 		form=QuoteForm()
 
 	context = {
@@ -41,6 +45,7 @@ def alarm_and_cctv_installation(request):
 	form = QuoteForm(request.POST)
 	if form.is_valid():
 		form.save()
+		messages.success(request, 'Your request has been sent successfully.!!')
 		form=QuoteForm()
 
 	context = {
@@ -52,6 +57,7 @@ def security_audit(request):
 	form = QuoteForm(request.POST)
 	if form.is_valid():
 		form.save()
+		messages.success(request, 'Your request has been sent successfully.!!')
 		form=QuoteForm()
 
 	context = {
@@ -62,6 +68,7 @@ def private_investigation(request):
 	form = QuoteForm(request.POST)
 	if form.is_valid():
 		form.save()
+		messages.success(request, 'Your request has been sent successfully.!!')
 		form=QuoteForm()
 
 	context = {
@@ -72,6 +79,7 @@ def dog_handling(request):
 	form = QuoteForm(request.POST)
 	if form.is_valid():
 		form.save()
+		messages.success(request, 'Your request has been sent successfully.!!')
 		form=QuoteForm()
 
 	context = {

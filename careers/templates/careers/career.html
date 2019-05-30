@@ -24,6 +24,10 @@
 	</div>
 	<div class="row my-5 py-2">
 		<div class="col-12 col-md-7 mx-auto">
+			{% if messages %}
+				{% include 'careers/snippets/messages.html' %}
+			{% endif %}
+			
 			<h4 class="text-center subtitle">Fill the Form</h4>
 			<div class="underlineform"></div>
 		<form action="" method="POST" enctype="multipart/form-data" class="mt-5" >

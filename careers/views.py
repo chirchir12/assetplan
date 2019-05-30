@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from django.contrib import messages
+
 from .forms import CareerForm
 
 def career_view(request):
@@ -8,6 +10,8 @@ def career_view(request):
 
 		if form.is_valid():
 			form.save()
+			messages.success(request, 'Your application was successfully!')
+			form=CareerForm()
 	else:
 		form=CareerForm()
 
