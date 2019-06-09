@@ -2,9 +2,9 @@ from django.db import models
 from django.core.exceptions import ValidationError
 
 
-def validate_file_extension(value):
-    if value.file.content_type != 'application/pdf':
-        raise ValidationError('File format not Supported!!!!')
+# def validate_file_extension(value):
+#     if value.file.content_type != 'application/pdf':
+#         raise ValidationError('File format not Supported!!!!')
 
 
 class Career(models.Model):
@@ -15,7 +15,7 @@ class Career(models.Model):
 	email            = models.EmailField(max_length=255)
 	location         = models.CharField(max_length=255)
 	education        = models.CharField(max_length=255)
-	cv               = models.FileField(upload_to='documents/CVs/', validators=[validate_file_extension])
+	cv               = models.FileField(upload_to='documents/CVs/')
 	career_objective = models.TextField()
 	uploaded_at      = models.DateTimeField(auto_now_add=True)
 
