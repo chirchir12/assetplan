@@ -1,4 +1,5 @@
 # Django #
+details.txt
 *.log
 *.pot
 *.pyc
