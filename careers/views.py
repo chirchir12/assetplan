@@ -9,7 +9,7 @@ def career_view(request):
 	if request.method == 'POST':
 		form = CareerForm(request.POST, request.FILES)
 		if form.is_valid():
-			subject='{} {} just name an application'.format(form.cleaned_data.get('firstname'), form.cleaned_data.get('lastname'))
+			subject='{} {} just made an application'.format(form.cleaned_data.get('firstname'), form.cleaned_data.get('lastname'))
 			email = form.cleaned_data.get('email')
 			message = form.cleaned_data.get('career_objective')
 			attach = form.cleaned_data.get('cv')
@@ -20,7 +20,7 @@ def career_view(request):
 			form.save()
 
 
-			messages.success(request, 'Your application was successfully!')
+			messages.success(request, 'Your application has been sent!')
 			form=CareerForm()
 	else:
 		form=CareerForm()
